@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<title>Hello, world!</title>
+	</head>
+	<body onload="load()">
+		
+		<div class="container">
+			<form role="form" class="form-row">
+				<div class="col-2">
+					<select id = "temp" onchange="fn3(this)" class="custom-select" style="width:150px">
+						<option>code</option>
+						<option>鸡</option>
+					</select>
+				</div>
+				<div class="col">
+					<select id="area" onchange="fn4(this)" class="custom-select" style="width:150px">
+						<option>m-完成</option>
+						<option>m-缺注释</option>
+						<option>m-只完成p</option>
+					</select>
+				</div>
+			</form>
+			<hr>
+			<!-- <label>课程选择</label>
+			<select id = "temp" onchange="fn3(this)" class="custom-select" style="width:150px">
+							<option>code</option>
+							<option>鸡</option>
+			</select>
+			<select id="area" onchange="fn4(this)" class="custom-select" style="width:150px">
+							<option>m-完成</option>
+							<option>m-缺注释</option>
+							<option>m-只完成p</option>
+			</select> -->
+			
+			<form>
+				<div class="form-group">
+					<label for="inputCourseName">课程名</label>
+					<input type="text" class="form-control" id="inputCourseName" value="Hello,codemao!">
+				</div>
+				<div class="form-group">
+					<label for="name">知识点</label>
+					<textarea class="form-control " rows="2" id="textarea">了解Python语言的特点，认识在线版的海龟编辑器及其使用，学习Python编程语言的输入(input)和输出(print)语句，学习如何给程序添加注释说明信息，通过本节课的学习，完成了一个简单的人机交互程序</textarea>
+				</div>
+			</form>
+			<!-- 		<form class="form-inline">
+				<div class="form-group mb-2">
+							<label for="staticEmail2" class="sr-only">课程名</label>
+							<input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="课程名">
+				</div>
+				<div class="form-group mx-sm-3 mb-2">
+							<label for="inputCourseName" class="sr-only">课程名</label>
+							<input type="text" class="form-control" id="inputCourseName" value="Hello,codemao!">
+				</div>
+			</form>
+			<form role="form">
+				<div class="form-group">
+							<label for="name">知识点</label>
+							<textarea class="form-control " rows="2" id="textarea">
+							了解Python语言的特点，认识在线版的海龟编辑器及其使用，学习Python编程语言的输入(input)和输出(print)语句，学习如何给程序添加注释说明信息，通过本节课的学习，完成了一个简单的人机交互程序
+							</textarea>
+				</div>
+			</form> -->
+			<table class="table table-sm-2">
+				<!-- 表头 -->
+				<thead>
+					<tr>
+						<th scope="col">维度</th>
+						<th scope="col">选择程度</th>
+						<th scope="col">具体评论点</th>
+					</tr>
+				</thead>
+				<!-- 表的内容 -->
+				<tbody id="tableContent">
+					<!-- 一行 -->
+				</tbody>
+			</table>
+			<form>
+				<div class="form-row">
+					<div class="col-2">
+						<input type="" name="inputName" placeholder="姓名" id="studentName">
+					</div>
+					<div class="col-2">
+						<input type="" name="inputID" placeholder="ID" id="studentID">
+					</div>
+					<div class="col-2">
+						<input type="" name="inputAge" placeholder="年龄" id="studentAge">
+					</div>
+					<div class="col-3">
+						<input type="" name="inputDiyContent" placeholder="自定内容" id="diyContent">
+					</div>
+				</div>
+			</form>
+			
+			<form role="form">
+				<div class="form-group">
+					<label for="name">评价</label>
+					<textarea class="form-control" rows="5" id="showarea">
+					</textarea>
+				</div>
+				<button type="button" class="btn btn-primary " id="genButton">生成</button>
+				<button type="button" class="btn btn-success" onclick="copy()">复制</button>
+			</form>
+		</div>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src = "../js/da_bx.json"></script>
+		<script type="text/javascript" src = "../js/da_qw.json"></script>
+		<script type="text/javascript" src = "../js/da_temp.json"></script>
+		<script type="text/javascript" src = "../js/javascript.js"></script>
+	</body>
+</html>
